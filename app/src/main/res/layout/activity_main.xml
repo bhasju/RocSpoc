@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="146dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@null"
+        app:srcCompat="@drawable/icon"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/rock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp"
+        android:background="@null"
+        android:contentDescription="TODO"
+        android:onClick="onClickPlay"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/rock" />
+
+    <ImageButton
+        android:id="@+id/paper"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"
+        android:layout_toStartOf="@+id/rock"
+        android:background="@null"
+        android:contentDescription="TODO"
+        android:onClick="onClickPlay"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/paper" />
+
+    <ImageButton
+        android:id="@+id/scissor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/paper"
+        android:layout_toEndOf="@+id/rock"
+        android:background="@null"
+        android:contentDescription="TODO"
+        android:onClick="onClickPlay"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/scissors" />
+
+    <ImageButton
+        android:id="@+id/spock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="215dp"
+        android:background="@null"
+        android:contentDescription="TODO"
+        android:onClick="onClickPlay"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/spock" />
+
+    <ImageButton
+        android:id="@+id/lizard"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignTop="@+id/spock"
+        android:background="@null"
+        android:onClick="onClickPlay"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/lizard" />
+
+</android.widget.RelativeLayout>
